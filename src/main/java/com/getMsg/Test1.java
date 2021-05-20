@@ -1,8 +1,11 @@
-package com.demo01;
+package com.getMsg;
 
 import java.util.concurrent.Callable;
 
 /**
+ * 获取处理器信息
+ * 获取线程状态信息
+ *
  * @author czy
  * @date 2021/5/19
  */
