@@ -13,11 +13,11 @@ import java.util.stream.LongStream;
 public class Test {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         //比较效率，数据越多越明显
-        test1();
+        //test1();
         test2();
-        test3();
+        //test3();
         //方法测试
-        test4();
+       // test4();
     }
 
     /**
