@@ -42,8 +42,5 @@ public class ForkJoinDemo extends RecursiveTask<Long> {
             //合并结果
             return task1.join() + task2.join();
         }
-
     }
-
-
 }
