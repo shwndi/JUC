@@ -1,5 +1,4 @@
-.idea
-bin
-target
+.idea/
+bin/
+target/
 *.iml
-Jenkinsfile
