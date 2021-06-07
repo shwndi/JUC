@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class SemaphoreTest {
     public static void main(String[] args) {
         Semaphore semaphore = new Semaphore(3);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             new Thread(()->{
                 try {
                     semaphore.acquire();
@@ -21,6 +21,7 @@ public class SemaphoreTest {
                     e.printStackTrace();
                 }finally {
                     //不释放别人不能执行
+                    System.out.println("GameOver");
                  semaphore.release();
                 }
             }).start();
