@@ -18,9 +18,10 @@ public class MyCountDownLatch {
         CountDownLatch count = new CountDownLatch(100);
         AtomicInteger integer = new AtomicInteger(0);
         for (int i = 0; i < 110; i++) {
+            int temp = i;
             new Thread(()->{
                 integer.getAndIncrement();
-                System.out.println(Thread.currentThread().getName()+"==>"+integer);
+                System.out.println(Thread.currentThread().getName()+"==>"+integer+"<=="+temp);
                 count.countDown();
             }).start();
         }

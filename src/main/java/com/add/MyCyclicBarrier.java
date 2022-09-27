@@ -35,7 +35,7 @@ public class MyCyclicBarrier {
                 integerB.getAndIncrement();
                 System.out.println(Thread.currentThread().getName()+"==>B"+integerB);
                 System.out.println("B  "+barrier.getNumberWaiting());
-                System.out.println("B  "+barrier.getParties());
+                System   .out.println("B  "+barrier.getParties());
                 try {
                     barrier.await();
                 } catch (InterruptedException e) {

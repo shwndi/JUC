@@ -14,9 +14,9 @@ public class Test6{
         Phone6 phone = new Phone6();
 
         //获取了两把锁，先打电话
-        new Thread(()->{phone.sendSms();},"A").start();
-        TimeUnit.SECONDS.sleep(1);
         new Thread(()->{phone.call();},"B").start();
+        TimeUnit.SECONDS.sleep(1);
+        new Thread(()->{phone.sendSms();},"A").start    ();
     }
 }
 

@@ -4,6 +4,9 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
 /**
+ * 等待n次循环后执行
+ * 通过await() 计数
+ *
  * @author czy
  * @date 2021/5/22
  */

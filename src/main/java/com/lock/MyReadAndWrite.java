@@ -36,7 +36,7 @@ public class MyReadAndWrite {
     }
 }
 
-class ObjCache<K, V> {
+class  ObjCache<K, V> {
     private volatile Map<K, V> map = new HashMap<>();
     private ReadWriteLock lock = new ReentrantReadWriteLock();
 
