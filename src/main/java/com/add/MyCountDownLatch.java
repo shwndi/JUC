@@ -1,7 +1,5 @@
 package com.add;
 
-import jdk.management.resource.internal.inst.ThreadRMHooks;
-
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
