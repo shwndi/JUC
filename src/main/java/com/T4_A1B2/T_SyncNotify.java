@@ -1,4 +1,4 @@
-package com.T1_Test;
+package com.T4_A1B2;
 
 import java.util.concurrent.locks.LockSupport;
 
@@ -6,7 +6,7 @@ import java.util.concurrent.locks.LockSupport;
  * @author czy
  * @date 2022/9/27
  */
-public class T_ABBA_Notify {
+public class T_SyncNotify {
     public static void main(String[] args) {
         Object lock = new Object();
         new Thread(() -> {
